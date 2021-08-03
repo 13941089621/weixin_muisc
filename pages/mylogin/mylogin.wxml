@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view>
+  <view class="cl_dh">
+      <image class="cl_gif" src="../../image/bg_wave.gif"></image>
+    </view>
+  <view class="cl_mymusic_top">
+  <block wx:if="{{!hasUserInfo && !islogin}}">
+    <button class="btnlogin" bindtap="getUserProfile">微信授权登入</button>
+    <!-- <button class="btnlogin" bindtap="btnAccount">账号登入</button> -->
+  </block>
+  <block wx:else >
+    <image class="cl_mymusic_image" bindtap="bindViewTap" src="{{avatarUrl}}" mode="cover"></image>
+    <view class="cl_mymusic_r">
+      <view class="cl_mymusic_nickname_style">{{nickName}}</view>
+      <view class="cl_mymusic_wx_name">{{loginId}}</view>
+      <view class="cl_mymusic_wx">ID:{{islogin}}</view>
+    </view>
+    <view class="cl_out" bindtap="btnOut">退出</view>
+  </block>
+  </view>
+
+  <block wx:if="{{!hasUserInfo && !islogin}}"></block>
+  <block wx:else>
+    <view class="ov">
+      <view class="li">说明</view>
+      <view class="ri" bindtap="go">Go~</view>
+    </view>
+  </block>
+</view>
+

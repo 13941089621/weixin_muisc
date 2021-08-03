@@ -1,0 +1,18 @@
+<!--component/isHide/index.wxml-->
+<view class="cl_home_all">
+      <view class='pageBox pageOne'>
+        <view class='list'>
+          <swiper indicator-dots="{{true}}" autoplay="{{false}}" previous-margin="{{'140rpx'}}" next-margin="{{'140rpx'}}" bindchange="swiperChange">
+            <block wx:for="{{imgUrls}}" wx:key="index">
+              <swiper-item>
+                <image src="{{item}}" class="slide-image {{swiperIndex == index ? 'active' : ''}}"/>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+    </view>
+
+    <view style="margin:12px">DJ的英文全称为Disc Jockey，可以翻译成唱片骑师。DJ的技术叫做打碟，也可以说这就是一个负责打碟的职业名词。他们以这种放歌的形式存在，绝大部分放着电音，但严格来说可以放任何音乐风格。打碟一般翻译为DJing，与职业分开。
+DJ是随HIPHOP文化和DISCO发展起来的。DJ发展到现在，意思已经完全清晰化了。DJ只是职业，是职业名词，工作主要是打碟，DJ指夜店(club)、酒吧(bar)、Live House、仓库派对、音乐节等场所的打碟工作者。DJ不是音乐风格，而是职业名词，如果当成音乐风格是一种对某几类电音或者舞曲的误称。
+    </view>

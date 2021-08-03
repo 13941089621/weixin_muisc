@@ -1,0 +1,5 @@
+
+.pageOne swiper{width: 750rpx;height: 360rpx;}
+.pageOne swiper-item{padding-top: 50rpx;}
+.pageOne image{width: 280rpx;height: 280rpx;position: absolute;left: 50%; margin-left: -140rpx;border-radius: 8px;}
+.pageOne image.active{transform: scale(1.2);transition:all .2s ease-in 0s;}

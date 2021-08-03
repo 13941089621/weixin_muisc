@@ -1,0 +1,82 @@
+
+<view>
+  
+  <!-- 1.主 -->
+  <view wx:if="{{isHtml !=='1'}}">
+    <view>
+      <view class="cl_musci_play">
+        <view class="cl_musci_img">
+          <image class="cl_musci_imgs {{isplay? 'play' : 'no'}}" src='{{posterimg}}' mode='widthFix'>
+          </image>
+        </view>
+        <view class="cl_musci_right">
+          <view class="cl_musci_l_son" bindtap="btnmusicplay" data-name="{{name}}" data-pid="{{pid}}"
+          data-posterimg="{{posterimg}}"
+          data-music="{{src}}"
+          data-author="{{author}}" data-time="{{musicTimeall}}/{{musicTime}}" data-types="{{isplay}}">
+            <view class="cl_musci_name"><text>{{name}}</text></view>
+            <view  class="cl_musci_poster"><text>{{author}}</text></view>
+            <!-- <view  class="cl_musci_time">{{musicTimeall}}/{{musicTime}}</view> -->
+          </view>
+          <view class="cl_musci_r_son">
+              <view class="cl_musci_off_on" bindtap="tabimg" >
+                <image wx:if="{{isplay}}" class="cl_musci_off_img" src="{{tabimg1}}"></image>
+                <image wx:else class="cl_musci_off_img" src="{{tabimg2}}"></image>
+              </view>
+          </view>
+        </view>
+      </view>
+
+      <view class="cl_musci_list_all">
+        <!-- <van-index-bar> -->
+        
+        <view wx:for="{{arr}}"
+          wx:key="index"  
+          bindtap="btnlist" data-url="{{item}}" 
+          data-ind="{{index}}"
+          class="cl_musci_list_son {{itemid==index ? 'color' : ''}} {{isFixedTop?'fixed':''}} {{isplay && itemid==index?  'isplays' : ''}}"
+          >
+          <!-- <van-index-anchor index="{{index}}"/> -->
+          <view class="cl_musci_list_all_left">{{index+1}}</view>
+          <view class="cl_musci_list_all_right">
+            <view class="cl_musci_list_title">
+              <view class="cl_musci_startdata">{{item.startdata}}</view>
+              <view class="po">
+                <view class="cl_musci_playback_nub">
+                  点击量:<text>{{item.playback}}</text>
+                </view>
+                <view class="cl_musci_clicks_nub">
+                  播放量:<text>{{item.clicks}}</text>
+                </view>
+              </view>
+            
+            </view>
+            <view class="cl_musci_list_name">{{item.musicname}}</view>
+          </view>
+        </view>
+
+      <!-- </van-index-bar> -->
+        <!-- controls loop -->
+        <audio  
+          poster="{{poster}}" 
+          name="{{name}}" 
+          author="{{author}}" 
+          src="{{src}}" 
+          id="myAudio" 
+          bindtimeupdate='bindtimeupdate' 
+          >
+        </audio>
+      </view>
+      
+
+    </view>
+  </view>
+  <!-- 2 静态页面-->
+  <view wx:else>
+    <IsHide></IsHide> 
+  </view>
+</view>
+
+
+
+

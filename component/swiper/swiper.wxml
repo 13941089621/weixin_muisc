@@ -1,0 +1,24 @@
+      <view class='pageBox pageOne'>
+        <view class='list'>
+          <swiper 
+            indicator-dots="{{false}}" 
+            interval="{{3000}}" 
+            autoplay="{{true}}" 
+            circular="{{true}}"
+        
+            previous-margin="{{'190rpx'}}" 
+            next-margin="{{'190rpx'}}" 
+            bindchange="swiperChange">
+            <block wx:for="{{list}}" wx:key="index">
+              <swiper-item>
+                <image mode="{{aspectFill}}" 
+                  bindtap="btnImg"
+                  data-item="{{item}}"
+                  src="{{'https://www.i1i3.com/api/' + item.albumimg }}" 
+                  class="slide-image {{swiperIndex == index ? 'active' : ''}}"/>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+   

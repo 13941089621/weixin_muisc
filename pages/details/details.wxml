@@ -1,0 +1,38 @@
+
+<view>
+<view class="cl_details_all_topimg bot">
+  <image class="cl_details_all_topimgs" src="{{imgs}}"></image>
+  <view class="cl_details_all_sonimg">
+    <image class="cl_details_all_topimgs cl_jb" src="{{imgs}}"></image>
+  </view>
+
+  <view class="cl_details_all_xq">
+    <image class="cl_details_all_topimgs cl_jb" src="{{imgs}}"></image>
+  </view>
+
+  <view class="cl_details_all_name">
+    <view class="cl_details_all_title">{{albumname}}</view>
+    <view class="cl_details_all_span">{{albumtext}}</view>
+  </view>
+</view>
+
+<view class="cl_details_all_list">
+  <view class="cl_details_list" wx:for="{{list}}" bindtap="musicplayList" data-item="{{item}}">
+    <view>
+      <view class="cl_details_list_nub">
+        <text class="{{index==0?'red':''}} {{index==1?'green':'test'}} {{index==2?'org':'test'}}" >{{index+1}}</text>
+      </view>
+      <view class="cl_details_list_nubimg">
+        <image class="cl_imgs" src="{{imgs}}"></image>
+      </view>
+      <view class="cl_details_list_r">
+        <view class="cl_details_list_r_namr">{{item.musicname}}</view>
+        <!-- <view class="cl_details_list_r_title">{{item.playback}}</view> -->
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+</view>

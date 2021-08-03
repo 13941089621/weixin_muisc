@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "IsHide": "../../component/isHide/index"
+  }
+}

@@ -1,0 +1,55 @@
+<view>
+
+<view class="cl_pc_login">
+  <view class="cl_pc_login_iogo"></view>
+  <!-- 注册 -->
+  <view class="no {{istab==0 ? 'bf' : ''}}">
+    <view class="cl_pc_login_name">
+      <input class="cl_pc_login_typetext" placeholder-class="placeholder" type="text" placeholder="请输入注册账号"></input>
+    </view>
+
+
+    <view class="cl_pc_login_name">
+      <input class="cl_pc_login_typetext" placeholder-class="placeholder" type="text" placeholder="请输入注册密码"></input>
+    </view>
+
+
+    <view class="cl_pc_login_name">
+      <view class="cl_pc_login_btn">注册</view>
+    </view>
+  </view>
+  <!-- 登录 -->
+  <view class="no {{istab==1 ? 'bf' : ''}}">
+    <view class="cl_pc_login_name">
+      <input class="cl_pc_login_typetext" placeholder-class="placeholder" type="text" placeholder="请输入登录账号"></input>
+    </view>
+
+
+    <view class="cl_pc_login_name">
+      <input class="cl_pc_login_typetext" placeholder-class="placeholder" type="text" placeholder="请输入登录密码"></input>
+    </view>
+
+    <view class="cl_pc_login_name">
+      <view class="cl_pc_login_yzm">2342</view>
+      <input class="cl_pc_login_typetext_s" placeholder-class="placeholder" type="text" placeholder="请输入验证码"></input>
+      
+    </view>
+
+
+    <view class="cl_pc_login_name">
+      <view class="cl_pc_login_btn">登录</view>
+    </view>
+  </view>
+
+
+
+  <view class="cl_pc_login_style">
+    <text class="cl_pc_login_color {{istab==1 ? 'bf' : ''}}" bindtap="btntab" data-current="0" >已经有账号/去登录</text>
+    <text class="cl_pc_login_color {{istab==0 ? 'bf bfs' : ''}}" bindtap="btntab" data-current="1" >新用户/去注册</text>
+  </view>
+  
+
+
+</view>
+
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "IsHideList" :"../../component/islist/index",
+    "swiperImg":"../../component/swiper/swiper"
+  }
+}

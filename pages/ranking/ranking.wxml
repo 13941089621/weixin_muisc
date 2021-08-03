@@ -1,0 +1,35 @@
+<!--logs.wxml-->
+<view>
+  <view  wx:if="{{isHtml==1}}">
+    <view class="cl_dh">
+      <image class="cl_gif" src="../../image/bg_wave.gif"></image>
+    </view>
+    <view class="cl_music_ranking_title">排名榜</view>
+    <swiperImg list="{{list}}"></swiperImg>  
+    <view class="cl_music_ranking_title">专辑列表</view>
+    <view class="cl_music_ranking">
+      <view class="cl_music_ranking_ov" >
+        <view class="cl_music_ranking_l" wx:for="{{list}}" bindtap="details" data-item="{{item}}" wx:key="index">
+          <!-- <view class="cl_music_ranking_uname">{{item.albumname}}</view> -->
+          <view class="cl_music_ranking_son">
+            <view class="cl_music_ranking_l_img">
+              <image class="cl_music_ranking_l_imgs" src="{{'https://www.i1i3.com/api/'+(item.albumimg)}}"></image>
+              <view class="cl_albumtext">{{item.albumname}}</view>
+            </view>
+            <view class="cl_music_ranking_r_all">
+              <view class="cl_music_ranking_fans">专辑名：{{item.albumtext}}</view>
+              <view class="cl_music_ranking_gender">专辑数: <text class="cl_cou">{{item.cou}}</text> </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view wx:else >
+    <IsHideList></IsHideList>
+  </view>
+
+
+
+</view>

@@ -1,0 +1,81 @@
+.cl_mymusic_top{
+  width: 100%;
+  min-height: 84px;
+  /* background: #833ab4; */
+  border-top: 1px solid rgba(255,255,255,0.4);
+  overflow: hidden;
+}
+
+
+.cl_mymusic_image{
+  width: 60px;
+  height: 60px;
+  float: left;
+  margin-top: 12px;
+  margin-left: 10px;
+  border-radius: 4px;
+}
+
+.cl_mymusic_nickname_style{
+  color: rgb(214, 15, 15);
+  margin-top: 10px;
+  font-size: 14px;
+}
+.cl_mymusic_r{
+  float: left;
+  margin-left: 12px;
+}
+.cl_mymusic_wx_name{
+  color: rgb(177, 218, 241);
+  margin-top: 5px;
+  font-size: 10px;
+}
+.cl_mymusic_wx{
+  color: rgb(7, 193, 96);
+  font-size: 12px;
+}
+
+.btnlogin{
+  margin:18px;
+  background: rgb(84, 33, 123);
+  color: rgb(169, 187, 177);
+}
+
+.ov{
+  overflow: hidden;
+  margin: 6px;
+  background: #f4eff5;
+  padding: 8px 7px;
+  border-radius: 6px;
+  break-inside: auto;
+  font-size: 14px;
+}
+.li{
+  float: left;
+  color: #999;
+}
+.ri{
+  float: right;
+  /* color: rgb(125, 103, 223); */
+}
+.cl_out{
+  float: right;
+  margin-top: 30px;
+  margin-right: 12px;
+  font-size: 12px;
+}
+.cl_dh{
+  width: 100%;
+  height: 30px;
+  position: relative;
+  background: linear-gradient(to bottom, #833ab4, #833ab4);
+  top: 0;
+}
+.cl_gif{
+  position: absolute;
+  left: 0;
+  bottom: -2rpx;
+  width: 100%;
+  mix-blend-mode: screen;
+  height: 100rpx;
+}

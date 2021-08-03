@@ -1,0 +1,20 @@
+<view class="all">
+  <view class="test">
+    <text>微信小程序号搜索 </text>
+    <text class="style">i1i3</text>
+    <text class="fz" bindtap="fzs">复制</text>
+  </view>
+  <view class="test">
+    <text>微信公众号搜索 </text>
+    <text class="style">i1i3dj网</text>
+    <text class="fz" bindtap="fz">复制</text>
+  </view>
+  <view class="test">
+    <text>如果你想上传；请你登入网站；</text>
+    <text class="style">wwww.i1i3.com</text>
+    <text class="fz" bindtap="fzd">复制</text>
+  </view>
+  <view class="top">
+    感谢关注，我会越做越好~
+  </view>
+</view>

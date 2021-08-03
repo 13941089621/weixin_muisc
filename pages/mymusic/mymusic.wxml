@@ -1,0 +1,24 @@
+<view>
+  <!-- 1 -->
+  <view  wx:if="{{isHtml=='1'}}">
+    <view class="cl_dh">
+      <image class="cl_gif" src="../../image/bg_wave.gif"></image>
+    </view>
+    <view class="ov">
+      <input class="inputs" type="text" bindinput="bindKeyInput" placeholder="输入歌曲名字"></input>
+      <view class="btngo" bindtap="linto">筛选</view>
+    </view>
+
+    <view class="title_top">歌曲分类</view>
+    <view class="title_fl">
+      <text class="title_name" wx:for="{{nameList}}" wx:key="index"
+      bindtap="btnList" data-item="{{item}}">{{item.name}}</text>
+    </view>
+
+  </view>
+  <!-- 2 -->
+  <view wx:else>
+    <IsHideList></IsHideList>
+  </view>
+
+</view>

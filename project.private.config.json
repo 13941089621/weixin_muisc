@@ -1,0 +1,72 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "上传说名",
+          "pathName": "pages/myexplain/myexplain",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/musicplay/musicplay",
+          "pathName": "pages/musicplay/musicplay",
+          "query": "musicname=%E5%8D%8A%E5%90%A8%E5%85%84%E5%BC%9F-%E5%A5%B3%E4%BA%BA%E7%9A%84%E9%80%89%E6%8B%A9-Dj%E4%BC%AF%E6%A0%BC%E7%89%88&url=https%3A%2F%2Fwww.i1i3.com%2Fapi%2Fuploads%2Fgoods%2Fupload_665459afb289f5d20b5c93672bb6f940.mp3&img=https%3A%2F%2Fwww.i1i3.com%2Fapi%2Fpublic%2Fimg%2Fuser%2Fupload_edc04e3c26f2a791f1c2cbb91fa0a1b8.jpg&mid=450",
+          "scene": null
+        },
+        {
+          "name": "pages/ranking/ranking",
+          "pathName": "pages/ranking/ranking",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mymusic/mymusic",
+          "pathName": "pages/mymusic/mymusic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/ranking/ranking",
+          "pathName": "pages/ranking/ranking",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mylogin/mylogin",
+          "pathName": "pages/mylogin/mylogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mymusic/mymusic",
+          "pathName": "pages/mymusic/mymusic",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/mylogin/mylogin",
+          "pathName": "pages/mylogin/mylogin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/ranking/ranking",
+          "pathName": "pages/ranking/ranking",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}
